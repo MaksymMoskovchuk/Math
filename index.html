@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Математичні функції й константи</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .section-title {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .result {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Математичні функції й константи</h1>
+
+    <div class="section-title">КОНСТАНТИ</div>
+    <div class="result">Значення константи е = <span id="e"></span></div>
+    <div class="result">Значення константи π = <span id="pi"></span></div>
+    <div class="result">Десятковий логарифм постійної Ейлера (е) = <span id="log10e"></span></div>
+    <div class="result">Двійковий логарифм постійної Ейлера (е) = <span id="log2e"></span></div>
+    <div class="result">Натуральний логарифм числа 10 = <span id="ln10"></span></div>
+    <div class="result">Натуральний логарифм числа 2 = <span id="ln2"></span></div>
+    <div class="result">Корінь квадратний із двох = <span id="sqrt2"></span></div>
+    <div class="result">Корінь квадратний з однієї другий = <span id="sqrt1_2"></span></div>
+
+    <div class="section-title">ФУНКЦІЇ</div>
+    <div class="result">Результат зведення в ступінь: 4^2 = <span id="pow"></span></div>
+    <div class="result">Результат добування квадратного кореня з 4: y = <span id="sqrt4"></span></div>
+    <div class="result">Результат добування квадратного кореня з -9: y = <span id="sqrtMinus9"></span></div>
+    <div class="result">Результат обчислення абсолютного значення -9: y = <span id="abs"></span></div>
+    <div class="result">Результат обчислення косинуса нуля радіан: y = <span id="cos0"></span></div>
+    <div class="result">Косинус 180 градусів (π радіан): y = <span id="cos180"></span></div>
+    <div class="result">Результат обчислення арккосинуса нуля : y = <span id="acos0"></span></div>
+    <div class="result">Результат обчислення синуса нуля радіан: y = <span id="sin0"></span></div>
+    <div class="result">Синус 90 градусів (π /2 радіан): y = <span id="sin90"></span></div>
+    <div class="result">Результат обчислення арксинуса одиниці: y = <span id="asin1"></span></div>
+    <div class="result">Тангенс 45 градусів (π /4 радіан): y = <span id="tan45"></span></div>
+    <div class="result">Результат обчислення арктангенса одиниці: y = <span id="atan1"></span></div>
+    <div class="result">Результат зведення е в ступінь 2: y = <span id="exp2"></span></div>
+    <div class="result">Натуральний логарифм від e^2: y = <span id="lnE2"></span></div>
+    <div class="result">Результат обчислення десяткового логарифма від числа 100: y = <span id="log10_100"></span></div>
+    <div class="result">Результат обчислення двійкового логарифма від числа 8: y = <span id="log2_8"></span></div>
+    <div class="result">Тангенс 45 градусів (з округленням): y = <span id="roundTan45"></span></div>
+    <div class="result">Результат округлення числа 1.00123 у більшу сторону: y = <span id="ceil1_00123"></span></div>
+    <div class="result">Результат округлення числа -3.1234 у більшу сторону: y = <span id="ceilMinus3_1234"></span></div>
+    <div class="result">Результат округлення числа 1.00123 у меншу сторону: y = <span id="floor1_00123"></span></div>
+    <div class="result">Результат округлення числа -3.1234 у меншу сторону: y = <span id="floorMinus3_1234"></span></div>
+    <div class="result">Результат округлення числа 1.44 за правилами арифметики: y = <span id="round1_44"></span></div>
+    <div class="result">Результат округлення числа 1.54 за правилами арифметики: y = <span id="round1_54"></span></div>
+    <div class="result">Вибір найбільшого із двох чисел 4 й 2: y = <span id="max4_2"></span></div>
+    <div class="result">Вибір найменшого із двох чисел 4 й 2: y = <span id="min4_2"></span></div>
+
+    <div class="section-title">ГЕНЕРАТОР ВИПАДКОВИХ ЧИСЕЛ</div>
+    <div class="result">Формування випадкових чисел в інтервалі [0;1]: y = <span id="random"></span></div>
+
+    <script>
+        document.getElementById('e').textContent = Math.E;
+        document.getElementById('pi').textContent = Math.PI;
+        document.getElementById('log10e').textContent = Math.LOG10E;
+        document.getElementById('log2e').textContent = Math.LOG2E;
+        document.getElementById('ln10').textContent = Math.LN10;
+        document.getElementById('ln2').textContent = Math.LN2;
+        document.getElementById('sqrt2').textContent = Math.SQRT2;
+        document.getElementById('sqrt1_2').textContent = Math.SQRT1_2;
+
+        document.getElementById('pow').textContent = Math.pow(4, 2);
+        document.getElementById('sqrt4').textContent = Math.sqrt(4);
+        document.getElementById('sqrtMinus9').textContent = Math.sqrt(-9);
+        document.getElementById('abs').textContent = Math.abs(-9);
+        document.getElementById('cos0').textContent = Math.cos(0);
+        document.getElementById('cos180').textContent = Math.cos(Math.PI);
+        document.getElementById('acos0').textContent = Math.acos(0);
+        document.getElementById('sin0').textContent = Math.sin(0);
+        document.getElementById('sin90').textContent = Math.sin(Math.PI / 2);
+        document.getElementById('asin1').textContent = Math.asin(1);
+        document.getElementById('tan45').textContent = Math.tan(Math.PI / 4);
+        document.getElementById('atan1').textContent = Math.atan(1);
+        document.getElementById('exp2').textContent = Math.exp(2);
+        document.getElementById('lnE2').textContent = Math.log(Math.exp(2));
+        document.getElementById('log10_100').textContent = Math.log10(100);
+        document.getElementById('log2_8').textContent = Math.log2(8);
+        document.getElementById('roundTan45').textContent = Math.round(Math.tan(Math.PI / 4));
+        document.getElementById('ceil1_00123').textContent = Math.ceil(1.00123);
+        document.getElementById('ceilMinus3_1234').textContent = Math.ceil(-3.1234);
+        document.getElementById('floor1_00123').textContent = Math.floor(1.00123);
+        document.getElementById('floorMinus3_1234').textContent = Math.floor(-3.1234);
+        document.getElementById('round1_44').textContent = Math.round(1.44);
+        document.getElementById('round1_54').textContent = Math.round(1.54);
+        document.getElementById('max4_2').textContent = Math.max(4, 2);
+        document.getElementById('min4_2').textContent = Math.min(4, 2);
+
+        document.getElementById('random').textContent = Math.random();
+    </script>
+</body>
+</html>
